@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Webcam App</h1>
+        <p class="sub">Real-Time HTTP Camera Preview</p>
+
+        <div class="controls">
+            <label for="cam">Camera</label>
+            <select id="cam">
+                <option value="0">0 (Default)</option>
+                <option value="1">1 (Dummy)</option>
+            </select>
+        </div>
+
+        <div class="camera-area">
+            <img id="img" src="/frame" alt="Webcam Preview">
+        </div>
+
+        <div class="stats">
+            <p id="stats">Loading statistics...</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/app.js"></script>
+
+</body>
+</html>
